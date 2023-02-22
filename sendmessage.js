@@ -6,7 +6,7 @@ let transporter = nodemailer.createTransport({
   service: "gmail",
   auth: { user: "200030003@iitdh.ac.in", pass: "qeigjxgpabotvajh" },
 });
-
+//fasd
 router.post('/',async(req,res)=>{
     const user=new User(req.body);
     const otp = Math.floor(Math.random() * 100000);
