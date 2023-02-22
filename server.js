@@ -2,7 +2,7 @@ const express=require('express');
 const bodyParser=require('body-parser');
 const mongoose = require('mongoose');
 const app=express();
-const port=5000;
+const port=process.env.PORT || 5000;
 const SendMessage =require('./sendmessage');
 app.use(bodyParser.json());
 
